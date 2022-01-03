@@ -1,0 +1,1427 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DA2032-AL:DA2032-AL U3
+U 1 1 61796579
+P 10050 3250
+F 0 "U3" H 9950 4331 50  0000 C CNN
+F 1 "DA2032-AL" H 9950 4240 50  0000 C CNN
+F 2 "DA2032-AL:DA2032-AL" H 10050 3250 50  0001 L BNN
+F 3 "" H 10050 3250 50  0001 L BNN
+	1    10050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 617A03AE
+P 10800 3050
+F 0 "D1" H 10800 2834 50  0000 C CNN
+F 1 "STTH3L06U" H 10800 2925 50  0000 C CNN
+F 2 "Diode_SMD:D_SMB" H 10800 3050 50  0001 C CNN
+F 3 "~" H 10800 3050 50  0001 C CNN
+	1    10800 3050
+	-1   0    0    1   
+$EndComp
+Text GLabel 4600 2350 0    50   Input ~ 0
+V_SUPPLY
+$Comp
+L Device:C C3
+U 1 1 617B802E
+P 4850 2500
+F 0 "C3" H 4965 2546 50  0000 L CNN
+F 1 "47u" H 4965 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4888 2350 50  0001 C CNN
+F 3 "~" H 4850 2500 50  0001 C CNN
+	1    4850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 617B89B9
+P 5250 2500
+F 0 "C4" H 5365 2546 50  0000 L CNN
+F 1 "47u" H 5365 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 2350 50  0001 C CNN
+F 3 "~" H 5250 2500 50  0001 C CNN
+	1    5250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 617B8B89
+P 5650 2500
+F 0 "C5" H 5765 2546 50  0000 L CNN
+F 1 "47u" H 5765 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5688 2350 50  0001 C CNN
+F 3 "~" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 617B8DD9
+P 6050 2500
+F 0 "C6" H 6165 2546 50  0000 L CNN
+F 1 "47u" H 6165 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 2350 50  0001 C CNN
+F 3 "~" H 6050 2500 50  0001 C CNN
+	1    6050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 617B9088
+P 6450 2500
+F 0 "C8" H 6565 2546 50  0000 L CNN
+F 1 "47u" H 6565 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6488 2350 50  0001 C CNN
+F 3 "~" H 6450 2500 50  0001 C CNN
+	1    6450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2350 4850 2350
+Connection ~ 4850 2350
+Wire Wire Line
+	4850 2350 5250 2350
+Connection ~ 5250 2350
+Wire Wire Line
+	5250 2350 5650 2350
+Connection ~ 5650 2350
+Wire Wire Line
+	5650 2350 6050 2350
+Connection ~ 6050 2350
+Wire Wire Line
+	6050 2350 6450 2350
+Wire Wire Line
+	6450 2650 6050 2650
+Connection ~ 5250 2650
+Wire Wire Line
+	5250 2650 4850 2650
+Connection ~ 5650 2650
+Wire Wire Line
+	5650 2650 5250 2650
+Connection ~ 6050 2650
+Wire Wire Line
+	6050 2650 5650 2650
+Text GLabel 4850 2650 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6450 2350 7100 2350
+Wire Wire Line
+	7100 2350 7100 2650
+Connection ~ 6450 2350
+Wire Wire Line
+	9550 2850 9500 2850
+Wire Wire Line
+	9500 2850 9500 2350
+Wire Wire Line
+	9500 2350 9550 2350
+Wire Wire Line
+	9500 2850 9500 3350
+Wire Wire Line
+	9500 3350 9550 3350
+Connection ~ 9500 2850
+Wire Wire Line
+	9500 3350 9500 3850
+Wire Wire Line
+	9500 3850 9550 3850
+Connection ~ 9500 3350
+Wire Wire Line
+	9550 2750 9400 2750
+Wire Wire Line
+	9400 2750 9400 3250
+Wire Wire Line
+	9400 3250 9550 3250
+Wire Wire Line
+	9400 3250 9400 3750
+Wire Wire Line
+	9400 3750 9550 3750
+Connection ~ 9400 3250
+Wire Wire Line
+	9400 3750 9400 4250
+Connection ~ 9400 3750
+Connection ~ 7100 2350
+Connection ~ 9500 2350
+$Comp
+L Device:R R4
+U 1 1 617E564A
+P 8900 2600
+F 0 "R4" H 8970 2646 50  0000 L CNN
+F 1 "10" H 8970 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8830 2600 50  0001 C CNN
+F 3 "~" H 8900 2600 50  0001 C CNN
+	1    8900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 617E6563
+P 8900 3000
+F 0 "C9" H 9015 3046 50  0000 L CNN
+F 1 "2000p" H 9015 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 2850 50  0001 C CNN
+F 3 "~" H 8900 3000 50  0001 C CNN
+	1    8900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2450 8900 2350
+Wire Wire Line
+	7100 2350 8900 2350
+Connection ~ 8900 2350
+Wire Wire Line
+	8900 2350 9500 2350
+Wire Wire Line
+	8900 2750 8900 2850
+Wire Wire Line
+	8900 3150 8900 4250
+Wire Wire Line
+	8900 4250 9400 4250
+Connection ~ 9400 4250
+Wire Wire Line
+	9400 4250 9550 4250
+$Comp
+L Transistor_FET:BSC082N10LSG Q1
+U 1 1 617EC251
+P 9300 4550
+F 0 "Q1" H 9504 4596 50  0000 L CNN
+F 1 "BSC082N10LSG" H 9504 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TDSON-8-1" H 9500 4475 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BSC082N10LS-DS-v01_07-en.pdf?fileId=db3a3043163797a6011647faad240719" V 9300 4550 50  0001 L CNN
+	1    9300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4350 9400 4250
+Text GLabel 7500 2950 2    50   Input ~ 0
+DR
+Text GLabel 9100 4550 0    50   Input ~ 0
+DR
+$Comp
+L Device:R R5
+U 1 1 617F484A
+P 9400 5050
+F 0 "R5" H 9470 5096 50  0000 L CNN
+F 1 "0.05" H 9470 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9330 5050 50  0001 C CNN
+F 3 "~" H 9400 5050 50  0001 C CNN
+	1    9400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 617F584A
+P 9900 5050
+F 0 "C10" H 10015 5096 50  0000 L CNN
+F 1 "0.01u" H 10015 5005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9938 4900 50  0001 C CNN
+F 3 "~" H 9900 5050 50  0001 C CNN
+	1    9900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4750 9400 4900
+Wire Wire Line
+	9400 4900 9900 4900
+Connection ~ 9400 4900
+Text GLabel 9400 5200 3    50   Input ~ 0
+GND
+Text GLabel 9900 5200 3    50   Input ~ 0
+GND
+Text GLabel 10100 4900 2    50   Input ~ 0
+ISEN
+Wire Wire Line
+	9900 4900 10100 4900
+Connection ~ 9900 4900
+Text GLabel 6700 2850 0    50   Input ~ 0
+ISEN
+Wire Wire Line
+	6700 2950 6050 2950
+Wire Wire Line
+	6050 2950 6050 3150
+$Comp
+L Device:C C7
+U 1 1 617FAD88
+P 6050 3300
+F 0 "C7" H 6165 3346 50  0000 L CNN
+F 1 "22n" H 6165 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6088 3150 50  0001 C CNN
+F 3 "~" H 6050 3300 50  0001 C CNN
+	1    6050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 617FB766
+P 6050 3700
+F 0 "R1" H 6120 3746 50  0000 L CNN
+F 1 "4.7k" H 6120 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5980 3700 50  0001 C CNN
+F 3 "~" H 6050 3700 50  0001 C CNN
+	1    6050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3550 6050 3450
+Text GLabel 6050 3850 3    50   Input ~ 0
+GND
+Text GLabel 6700 3050 0    50   Input ~ 0
+FB
+Wire Wire Line
+	6700 3150 6500 3150
+Wire Wire Line
+	6500 3150 6500 3600
+$Comp
+L Device:R R2
+U 1 1 617FE8E5
+P 6500 3750
+F 0 "R2" H 6570 3796 50  0000 L CNN
+F 1 "20k" H 6570 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6430 3750 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3350 7300 3350
+Wire Wire Line
+	7300 3350 7300 3450
+Connection ~ 7300 3350
+Text GLabel 7300 3450 3    50   Input ~ 0
+GND
+Wire Wire Line
+	10350 3050 10650 3050
+$Comp
+L Device:C C11
+U 1 1 618059D9
+P 11150 3200
+F 0 "C11" H 11265 3246 50  0000 L CNN
+F 1 "0.47u" H 11265 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 11188 3050 50  0001 C CNN
+F 3 "~" H 11150 3200 50  0001 C CNN
+	1    11150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 3050 11150 3050
+Wire Wire Line
+	11150 3450 11150 3350
+$Comp
+L Device:R R8
+U 1 1 6180860D
+P 12400 3050
+F 0 "R8" V 12193 3050 50  0000 C CNN
+F 1 "40k" V 12284 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 12330 3050 50  0001 C CNN
+F 3 "~" H 12400 3050 50  0001 C CNN
+	1    12400 3050
+	0    1    1    0   
+$EndComp
+Text GLabel 12650 3750 3    50   Input ~ 0
+GND
+Connection ~ 12200 3050
+Wire Wire Line
+	12200 3050 12250 3050
+$Comp
+L Device:R R3
+U 1 1 61814F14
+P 6500 4250
+F 0 "R3" H 6570 4296 50  0000 L CNN
+F 1 "10k" H 6570 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6430 4250 50  0001 C CNN
+F 3 "~" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 4400 3    50   Input ~ 0
+V_SUPPLY
+$Comp
+L Device:R R6
+U 1 1 6181ADB4
+P 12200 3800
+F 0 "R6" H 12270 3846 50  0000 L CNN
+F 1 "487k" H 12270 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 12130 3800 50  0001 C CNN
+F 3 "~" H 12200 3800 50  0001 C CNN
+	1    12200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 3050 12200 3650
+Wire Wire Line
+	12200 3950 12200 4000
+$Comp
+L Device:R R7
+U 1 1 6181EDAE
+P 12200 4200
+F 0 "R7" H 12270 4246 50  0000 L CNN
+F 1 "3.32k" H 12270 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12130 4200 50  0001 C CNN
+F 3 "~" H 12200 4200 50  0001 C CNN
+	1    12200 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 12200 4350 3    50   Input ~ 0
+GND
+Text GLabel 12050 4000 0    50   Input ~ 0
+FB
+Wire Wire Line
+	12050 4000 12200 4000
+Connection ~ 12200 4000
+Wire Wire Line
+	12200 4000 12200 4050
+$Comp
+L Device:C C13
+U 1 1 6182B63D
+P 11850 3200
+F 0 "C13" H 11965 3246 50  0000 L CNN
+F 1 "0.47u" H 11965 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 11888 3050 50  0001 C CNN
+F 3 "~" H 11850 3200 50  0001 C CNN
+	1    11850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 6182CBB6
+P 11550 3200
+F 0 "C12" H 11665 3246 50  0000 L CNN
+F 1 "0.47u" H 11665 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 11588 3050 50  0001 C CNN
+F 3 "~" H 11550 3200 50  0001 C CNN
+	1    11550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 3050 11550 3050
+Connection ~ 11150 3050
+Wire Wire Line
+	11850 3050 12200 3050
+Wire Wire Line
+	11850 3050 11550 3050
+Connection ~ 11850 3050
+Connection ~ 11550 3050
+Wire Wire Line
+	11550 3350 11550 3450
+Wire Wire Line
+	11550 3450 11850 3450
+Wire Wire Line
+	11850 3350 11850 3450
+Connection ~ 11850 3450
+Wire Wire Line
+	11850 3450 12650 3450
+Wire Wire Line
+	10350 3450 11150 3450
+Connection ~ 11550 3450
+Connection ~ 11150 3450
+Wire Wire Line
+	11150 3450 11550 3450
+$Comp
+L dk_PMIC-Voltage-Regulators-DC-DC-Switching-Controllers:LM3478MM_NOPB U2
+U 1 1 61791DE9
+P 7100 2950
+F 0 "U2" H 7600 2600 60  0000 L CNN
+F 1 "LM3478MM_NOPB" H 7550 2700 60  0000 L CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 7300 3150 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm3478" H 7300 3250 60  0001 L CNN
+F 4 "LM3478MM/NOPBCT-ND" H 7300 3350 60  0001 L CNN "Digi-Key_PN"
+F 5 "LM3478MM/NOPB" H 7300 3450 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 7300 3550 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - DC DC Switching Controllers" H 7300 3650 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flm3478" H 7300 3750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/LM3478MM-NOPB/LM3478MM-NOPBCT-ND/355388" H 7300 3850 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG CTRLR MULT TOP 8VSSOP" H 7300 3950 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 7300 4050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7300 4150 60  0001 L CNN "Status"
+	1    7100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 3450 12650 3750
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61B90678
+P 1400 2150
+F 0 "J1" H 1508 2331 50  0000 C CNN
+F 1 "Vin" H 1508 2240 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1400 2150 50  0001 C CNN
+F 3 "~" H 1400 2150 50  0001 C CNN
+	1    1400 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 2150 2    50   Input ~ 0
+V_SUPPLY
+Text GLabel 1600 2250 2    50   Input ~ 0
+GND
+Wire Wire Line
+	12550 3050 12950 3050
+$Comp
+L STM8L151C6T6:STM8L151C6T6 IC1
+U 1 1 61B960F0
+P 5000 7100
+F 0 "IC1" H 7050 5600 50  0000 L CNN
+F 1 "STM8L151C6T6" H 6850 5500 50  0000 L CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6550 7500 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00240181.pdf" H 6550 7400 50  0001 L CNN
+F 4 "STM8L151C6T6, 8 bit STM8 Microcontroller 16MHz 1 kB, 32 kB Flash, 2 kB RAM, I2C 48-Pin LQFP" H 6550 7300 50  0001 L CNN "Description"
+F 5 "1.6" H 6550 7200 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 6550 7100 50  0001 L CNN "Manufacturer_Name"
+F 7 "STM8L151C6T6" H 6550 7000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-STM8L151C6T6" H 6550 6900 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM8L151C6T6?qs=C4bsGCXLN2t0sXmtEq0yEQ%3D%3D" H 6550 6800 50  0001 L CNN "Mouser Price/Stock"
+F 10 "STM8L151C6T6" H 6550 6700 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/stm8l151c6t6/stmicroelectronics" H 6550 6600 50  0001 L CNN "Arrow Price/Stock"
+	1    5000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD2981CM33TR:LD2981CM33TR U1
+U 1 1 61B9C15E
+P 1450 3300
+F 0 "U1" H 1950 3565 50  0000 C CNN
+F 1 "LD2981CM33TR" H 1950 3474 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1450 3700 50  0001 L CNN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001635.pdf" H 1450 3800 50  0001 L CNN
+F 4 "Manufacturer URL" H 1450 3900 50  0001 L CNN "Component Link 1 Description"
+F 5 "http://www.st.com" H 1450 4000 50  0001 L CNN "Component Link 1 URL"
+F 6 "14/07/2008" H 1450 4100 50  0001 L CNN "Datasheet Version"
+F 7 "5-Pin SOT-23 Package, 2.9 x 1.6 mm Body, 0.95 mm Pitch, 2.8 mm Lead Span" H 1450 4200 50  0001 L CNN "Package Description"
+F 8 "1/01/2008" H 1450 4300 50  0001 L CNN "Package Version"
+F 9 "IC" H 1450 4400 50  0001 L CNN "category"
+F 10 "1504751" H 1450 4500 50  0001 L CNN "ciiva ids"
+F 11 "c03b369a8de6a46b" H 1450 4600 50  0001 L CNN "library id"
+F 12 "STMicroelectronics" H 1450 4700 50  0001 L CNN "manufacturer"
+F 13 "SOT23-5L" H 1450 4800 50  0001 L CNN "package"
+F 14 "1329864113" H 1450 4900 50  0001 L CNN "release date"
+F 15 "80AE1A0F-E28F-4274-89E5-DDAAFCE11B3C" H 1450 5000 50  0001 L CNN "vault revision"
+F 16 "yes" H 1450 5100 50  0001 L CNN "imported"
+	1    1450 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 3300 2    50   Input ~ 0
+3v3
+Text GLabel 1300 3300 0    50   Input ~ 0
+V_SUPPLY
+Wire Wire Line
+	1550 3400 1550 3300
+Wire Wire Line
+	1300 3300 1400 3300
+Connection ~ 1550 3300
+$Comp
+L Device:C C1
+U 1 1 61BA5F7F
+P 1400 3550
+F 0 "C1" H 1515 3596 50  0000 L CNN
+F 1 "1uf" H 1515 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1438 3400 50  0001 C CNN
+F 3 "~" H 1400 3550 50  0001 C CNN
+	1    1400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3400 1400 3300
+Connection ~ 1400 3300
+Wire Wire Line
+	1400 3300 1550 3300
+Wire Wire Line
+	1950 3700 1400 3700
+Wire Wire Line
+	2350 3300 2450 3300
+$Comp
+L Device:C C2
+U 1 1 61BAC5A2
+P 2450 3500
+F 0 "C2" H 2565 3546 50  0000 L CNN
+F 1 "2.2uf" H 2565 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2488 3350 50  0001 C CNN
+F 3 "~" H 2450 3500 50  0001 C CNN
+	1    2450 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3350 2450 3300
+Connection ~ 2450 3300
+Wire Wire Line
+	2450 3300 2500 3300
+Wire Wire Line
+	2450 3650 2450 3700
+Wire Wire Line
+	2450 3700 1950 3700
+Connection ~ 1950 3700
+Text GLabel 1950 3800 3    50   Input ~ 0
+GND
+Wire Wire Line
+	1950 3800 1950 3700
+Text GLabel 5000 7100 0    50   Input ~ 0
+SWIM
+Text GLabel 5000 7200 0    50   Input ~ 0
+NRST
+Text GLabel 5000 7300 0    50   Input ~ 0
+USART_TX
+Text GLabel 5000 7400 0    50   Input ~ 0
+USART_RX
+Text GLabel 5000 7900 0    50   Input ~ 0
+GND
+$Comp
+L Device:C C16
+U 1 1 61BB52EE
+P 4700 8250
+F 0 "C16" H 4815 8296 50  0000 L CNN
+F 1 "100nf" H 4815 8205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4738 8100 50  0001 C CNN
+F 3 "~" H 4700 8250 50  0001 C CNN
+	1    4700 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 61BB6CB1
+P 4050 8250
+F 0 "C15" H 4165 8296 50  0000 L CNN
+F 1 "100nf" H 4165 8205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 8100 50  0001 C CNN
+F 3 "~" H 4050 8250 50  0001 C CNN
+	1    4050 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 8100 4700 8100
+Text GLabel 4700 8400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4700 8100 4500 8100
+Connection ~ 4700 8100
+Text GLabel 4500 8100 0    50   Input ~ 0
+3v3
+Wire Wire Line
+	5000 8000 4050 8000
+Wire Wire Line
+	4050 8000 4050 8100
+Text GLabel 4050 8400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4050 8000 3900 8000
+Connection ~ 4050 8000
+Text GLabel 3900 8000 0    50   Input ~ 0
+3v3
+Text GLabel 6100 6500 1    50   Input ~ 0
+GND
+$Comp
+L Device:C C17
+U 1 1 61BD9E04
+P 6350 5850
+F 0 "C17" V 6098 5850 50  0000 C CNN
+F 1 "100nf" V 6189 5850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6388 5700 50  0001 C CNN
+F 3 "~" H 6350 5850 50  0001 C CNN
+	1    6350 5850
+	0    1    1    0   
+$EndComp
+Text GLabel 6500 5850 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6200 5850 6200 5600
+Connection ~ 6200 5850
+Text GLabel 6200 5600 1    50   Input ~ 0
+3v3
+$Comp
+L Device:C C14
+U 1 1 61BDF8EC
+P 2700 8100
+F 0 "C14" H 2815 8146 50  0000 L CNN
+F 1 "1uf" H 2815 8055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2738 7950 50  0001 C CNN
+F 3 "~" H 2700 8100 50  0001 C CNN
+	1    2700 8100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 7950 1    50   Input ~ 0
+3v3
+Text GLabel 2700 8250 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6500 3900 6500 4000
+Wire Wire Line
+	6500 4000 7050 4000
+Connection ~ 6500 4000
+Wire Wire Line
+	6500 4000 6500 4100
+Text GLabel 7050 4000 2    50   Input ~ 0
+BOOST_DISABLE
+Text GLabel 5000 7500 0    50   Input ~ 0
+BOOST_DISABLE
+Text Notes 2250 7600 0    50   ~ 0
+Near VDDx Pins on STM8
+Text GLabel 6400 8800 3    50   Input ~ 0
+BUTTON_1
+Wire Wire Line
+	3500 6000 3400 6000
+Wire Wire Line
+	3400 6000 3400 6150
+Text GLabel 3400 6150 3    50   Input ~ 0
+GND
+Text GLabel 4250 6000 2    50   Input ~ 0
+BUTTON_1
+Text GLabel 6700 7700 2    50   Input ~ 0
+L_B0
+$Comp
+L Switch:SW_SP3T SW2
+U 1 1 61C0C915
+P 1300 7500
+F 0 "SW2" H 1300 7783 50  0000 C CNN
+F 1 "SW_SP3T" H 1300 7692 50  0000 C CNN
+F 2 "PCM13SMTR:SW_PCM13SMTR" H 675 7675 50  0001 C CNN
+F 3 "~" H 675 7675 50  0001 C CNN
+	1    1300 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 6000 4250 6000
+Text GLabel 1100 7500 0    50   Input ~ 0
+GND
+Text GLabel 1500 7400 2    50   Input ~ 0
+SW_1
+Text GLabel 1500 7500 2    50   Input ~ 0
+SW_2
+Text GLabel 1500 7600 2    50   Input ~ 0
+SW_3
+Text GLabel 6700 7800 2    50   Input ~ 0
+L_B1
+Text GLabel 6700 7900 2    50   Input ~ 0
+L_B7
+Text GLabel 12950 3050 2    50   Input ~ 0
+V_NIXIE
+$Comp
+L Transistor_BJT:MMBTA42 Q2
+U 1 1 61C462AD
+P 9450 7150
+F 0 "Q2" H 9640 7196 50  0000 L CNN
+F 1 "MMBTA42" H 9640 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9650 7075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 9450 7150 50  0001 L CNN
+	1    9450 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 7350 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R9
+U 1 1 61C480EC
+P 9100 7150
+F 0 "R9" V 8893 7150 50  0000 C CNN
+F 1 "10k" V 8984 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9030 7150 50  0001 C CNN
+F 3 "~" H 9100 7150 50  0001 C CNN
+	1    9100 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q6
+U 1 1 61C4A0A1
+P 11150 7150
+F 0 "Q6" H 11340 7196 50  0000 L CNN
+F 1 "MMBTA42" H 11340 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11350 7075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 11150 7150 50  0001 L CNN
+	1    11150 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 11250 7350 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R13
+U 1 1 61C4A0A8
+P 10800 7150
+F 0 "R13" V 10593 7150 50  0000 C CNN
+F 1 "10k" V 10684 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10730 7150 50  0001 C CNN
+F 3 "~" H 10800 7150 50  0001 C CNN
+	1    10800 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q10
+U 1 1 61C4D1BC
+P 12600 7150
+F 0 "Q10" H 12790 7196 50  0000 L CNN
+F 1 "MMBTA42" H 12790 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12800 7075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 12600 7150 50  0001 L CNN
+	1    12600 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 12700 7350 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R17
+U 1 1 61C4D1C3
+P 12250 7150
+F 0 "R17" V 12043 7150 50  0000 C CNN
+F 1 "10k" V 12134 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12180 7150 50  0001 C CNN
+F 3 "~" H 12250 7150 50  0001 C CNN
+	1    12250 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q14
+U 1 1 61C5023B
+P 14000 7150
+F 0 "Q14" H 14190 7196 50  0000 L CNN
+F 1 "MMBTA42" H 14190 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14200 7075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 14000 7150 50  0001 L CNN
+	1    14000 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 14100 7350 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R21
+U 1 1 61C50242
+P 13650 7150
+F 0 "R21" V 13443 7150 50  0000 C CNN
+F 1 "10k" V 13534 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13580 7150 50  0001 C CNN
+F 3 "~" H 13650 7150 50  0001 C CNN
+	1    13650 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q18
+U 1 1 61C59B47
+P 15550 7150
+F 0 "Q18" H 15740 7196 50  0000 L CNN
+F 1 "MMBTA42" H 15740 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15750 7075 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 15550 7150 50  0001 L CNN
+	1    15550 7150
+	1    0    0    -1  
+$EndComp
+Text GLabel 15650 7350 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R25
+U 1 1 61C59B4E
+P 15200 7150
+F 0 "R25" V 14993 7150 50  0000 C CNN
+F 1 "10k" V 15084 7150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15130 7150 50  0001 C CNN
+F 3 "~" H 15200 7150 50  0001 C CNN
+	1    15200 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q3
+U 1 1 61C5D923
+P 9450 8500
+F 0 "Q3" H 9640 8546 50  0000 L CNN
+F 1 "MMBTA42" H 9640 8455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9650 8425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 9450 8500 50  0001 L CNN
+	1    9450 8500
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 8700 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R10
+U 1 1 61C5D92A
+P 9100 8500
+F 0 "R10" V 8893 8500 50  0000 C CNN
+F 1 "10k" V 8984 8500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9030 8500 50  0001 C CNN
+F 3 "~" H 9100 8500 50  0001 C CNN
+	1    9100 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q7
+U 1 1 61C60EBC
+P 11200 8500
+F 0 "Q7" H 11390 8546 50  0000 L CNN
+F 1 "MMBTA42" H 11390 8455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11400 8425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 11200 8500 50  0001 L CNN
+	1    11200 8500
+	1    0    0    -1  
+$EndComp
+Text GLabel 11300 8700 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R14
+U 1 1 61C60EC3
+P 10850 8500
+F 0 "R14" V 10643 8500 50  0000 C CNN
+F 1 "10k" V 10734 8500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10780 8500 50  0001 C CNN
+F 3 "~" H 10850 8500 50  0001 C CNN
+	1    10850 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q11
+U 1 1 61C641D8
+P 12650 8500
+F 0 "Q11" H 12840 8546 50  0000 L CNN
+F 1 "MMBTA42" H 12840 8455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12850 8425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 12650 8500 50  0001 L CNN
+	1    12650 8500
+	1    0    0    -1  
+$EndComp
+Text GLabel 12750 8700 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R18
+U 1 1 61C641DF
+P 12300 8500
+F 0 "R18" V 12093 8500 50  0000 C CNN
+F 1 "10k" V 12184 8500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12230 8500 50  0001 C CNN
+F 3 "~" H 12300 8500 50  0001 C CNN
+	1    12300 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q15
+U 1 1 61C670FF
+P 14050 8500
+F 0 "Q15" H 14240 8546 50  0000 L CNN
+F 1 "MMBTA42" H 14240 8455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14250 8425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 14050 8500 50  0001 L CNN
+	1    14050 8500
+	1    0    0    -1  
+$EndComp
+Text GLabel 14150 8700 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R22
+U 1 1 61C67106
+P 13700 8500
+F 0 "R22" V 13493 8500 50  0000 C CNN
+F 1 "10k" V 13584 8500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13630 8500 50  0001 C CNN
+F 3 "~" H 13700 8500 50  0001 C CNN
+	1    13700 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q19
+U 1 1 61C699DB
+P 15600 8500
+F 0 "Q19" H 15790 8546 50  0000 L CNN
+F 1 "MMBTA42" H 15790 8455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15800 8425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 15600 8500 50  0001 L CNN
+	1    15600 8500
+	1    0    0    -1  
+$EndComp
+Text GLabel 15700 8700 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R26
+U 1 1 61C699E2
+P 15250 8500
+F 0 "R26" V 15043 8500 50  0000 C CNN
+F 1 "10k" V 15134 8500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15180 8500 50  0001 C CNN
+F 3 "~" H 15250 8500 50  0001 C CNN
+	1    15250 8500
+	0    1    1    0   
+$EndComp
+Text GLabel 6700 7300 2    50   Input ~ 0
+L_B6
+Text GLabel 6700 7400 2    50   Input ~ 0
+L_B2
+Text GLabel 6700 7600 2    50   Input ~ 0
+L_B9
+Text GLabel 5600 6500 1    50   Input ~ 0
+L_A7
+Text GLabel 6700 7500 2    50   Input ~ 0
+L_B8
+Text GLabel 5700 6500 1    50   Input ~ 0
+L_A1
+Text GLabel 5800 6500 1    50   Input ~ 0
+L_A0
+Text GLabel 6300 6500 1    50   Input ~ 0
+L_A9
+Text GLabel 6700 8000 2    50   Input ~ 0
+L_B3
+Text GLabel 6700 8100 2    50   Input ~ 0
+L_B4
+Wire Wire Line
+	6200 5850 6200 6500
+Text GLabel 6700 8200 2    50   Input ~ 0
+L_B5
+Text GLabel 5300 6500 1    50   Input ~ 0
+L_A5
+$Comp
+L Transistor_BJT:MMBTA42 Q4
+U 1 1 61CA69CA
+P 9550 11000
+F 0 "Q4" H 9740 11046 50  0000 L CNN
+F 1 "MMBTA42" H 9740 10955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 10925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 9550 11000 50  0001 L CNN
+	1    9550 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9650 11200 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R11
+U 1 1 61CA69D1
+P 9200 11000
+F 0 "R11" V 8993 11000 50  0000 C CNN
+F 1 "10k" V 9084 11000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9130 11000 50  0001 C CNN
+F 3 "~" H 9200 11000 50  0001 C CNN
+	1    9200 11000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q8
+U 1 1 61CA69D7
+P 11250 11000
+F 0 "Q8" H 11440 11046 50  0000 L CNN
+F 1 "MMBTA42" H 11440 10955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11450 10925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 11250 11000 50  0001 L CNN
+	1    11250 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 11350 11200 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R15
+U 1 1 61CA69DE
+P 10900 11000
+F 0 "R15" V 10693 11000 50  0000 C CNN
+F 1 "10k" V 10784 11000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10830 11000 50  0001 C CNN
+F 3 "~" H 10900 11000 50  0001 C CNN
+	1    10900 11000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q12
+U 1 1 61CA69E4
+P 12700 11000
+F 0 "Q12" H 12890 11046 50  0000 L CNN
+F 1 "MMBTA42" H 12890 10955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12900 10925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 12700 11000 50  0001 L CNN
+	1    12700 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 12800 11200 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R19
+U 1 1 61CA69EB
+P 12350 11000
+F 0 "R19" V 12143 11000 50  0000 C CNN
+F 1 "10k" V 12234 11000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12280 11000 50  0001 C CNN
+F 3 "~" H 12350 11000 50  0001 C CNN
+	1    12350 11000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q16
+U 1 1 61CA69F1
+P 14100 11000
+F 0 "Q16" H 14290 11046 50  0000 L CNN
+F 1 "MMBTA42" H 14290 10955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 10925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 14100 11000 50  0001 L CNN
+	1    14100 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 14200 11200 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R23
+U 1 1 61CA69F8
+P 13750 11000
+F 0 "R23" V 13543 11000 50  0000 C CNN
+F 1 "10k" V 13634 11000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13680 11000 50  0001 C CNN
+F 3 "~" H 13750 11000 50  0001 C CNN
+	1    13750 11000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q20
+U 1 1 61CA69FE
+P 15650 11000
+F 0 "Q20" H 15840 11046 50  0000 L CNN
+F 1 "MMBTA42" H 15840 10955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15850 10925 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 15650 11000 50  0001 L CNN
+	1    15650 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 15750 11200 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R27
+U 1 1 61CA6A05
+P 15300 11000
+F 0 "R27" V 15093 11000 50  0000 C CNN
+F 1 "10k" V 15184 11000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15230 11000 50  0001 C CNN
+F 3 "~" H 15300 11000 50  0001 C CNN
+	1    15300 11000
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q5
+U 1 1 61CA6A0B
+P 9550 12350
+F 0 "Q5" H 9740 12396 50  0000 L CNN
+F 1 "MMBTA42" H 9740 12305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9750 12275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 9550 12350 50  0001 L CNN
+	1    9550 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 9650 12550 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R12
+U 1 1 61CA6A12
+P 9200 12350
+F 0 "R12" V 8993 12350 50  0000 C CNN
+F 1 "10k" V 9084 12350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9130 12350 50  0001 C CNN
+F 3 "~" H 9200 12350 50  0001 C CNN
+	1    9200 12350
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q9
+U 1 1 61CA6A18
+P 11300 12350
+F 0 "Q9" H 11490 12396 50  0000 L CNN
+F 1 "MMBTA42" H 11490 12305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11500 12275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 11300 12350 50  0001 L CNN
+	1    11300 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 11400 12550 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R16
+U 1 1 61CA6A1F
+P 10950 12350
+F 0 "R16" V 10743 12350 50  0000 C CNN
+F 1 "10k" V 10834 12350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10880 12350 50  0001 C CNN
+F 3 "~" H 10950 12350 50  0001 C CNN
+	1    10950 12350
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q13
+U 1 1 61CA6A25
+P 12750 12350
+F 0 "Q13" H 12940 12396 50  0000 L CNN
+F 1 "MMBTA42" H 12940 12305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12950 12275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 12750 12350 50  0001 L CNN
+	1    12750 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 12850 12550 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R20
+U 1 1 61CA6A2C
+P 12400 12350
+F 0 "R20" V 12193 12350 50  0000 C CNN
+F 1 "10k" V 12284 12350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 12330 12350 50  0001 C CNN
+F 3 "~" H 12400 12350 50  0001 C CNN
+	1    12400 12350
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q17
+U 1 1 61CA6A32
+P 14150 12350
+F 0 "Q17" H 14340 12396 50  0000 L CNN
+F 1 "MMBTA42" H 14340 12305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14350 12275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 14150 12350 50  0001 L CNN
+	1    14150 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 14250 12550 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R24
+U 1 1 61CA6A39
+P 13800 12350
+F 0 "R24" V 13593 12350 50  0000 C CNN
+F 1 "10k" V 13684 12350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 13730 12350 50  0001 C CNN
+F 3 "~" H 13800 12350 50  0001 C CNN
+	1    13800 12350
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:MMBTA42 Q21
+U 1 1 61CA6A3F
+P 15700 12350
+F 0 "Q21" H 15890 12396 50  0000 L CNN
+F 1 "MMBTA42" H 15890 12305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 15900 12275 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF" H 15700 12350 50  0001 L CNN
+	1    15700 12350
+	1    0    0    -1  
+$EndComp
+Text GLabel 15800 12550 3    50   Input ~ 0
+GND
+$Comp
+L Device:R R28
+U 1 1 61CA6A46
+P 15350 12350
+F 0 "R28" V 15143 12350 50  0000 C CNN
+F 1 "10k" V 15234 12350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 15280 12350 50  0001 C CNN
+F 3 "~" H 15350 12350 50  0001 C CNN
+	1    15350 12350
+	0    1    1    0   
+$EndComp
+Text Notes 11900 6450 0    50   ~ 0
+TUBE B
+Text Notes 12150 10300 0    50   ~ 0
+TUBE A
+Text GLabel 10650 7150 0    50   Input ~ 0
+L_B0
+Text GLabel 11250 6950 1    50   Input ~ 0
+B0
+Text GLabel 8950 7150 0    50   Input ~ 0
+L_B1
+Text GLabel 9550 6950 1    50   Input ~ 0
+B1
+Text GLabel 15050 7150 0    50   Input ~ 0
+L_B2
+Text GLabel 15650 6950 1    50   Input ~ 0
+B2
+Text GLabel 13550 8500 0    50   Input ~ 0
+L_B3
+Text GLabel 14150 8300 1    50   Input ~ 0
+B3
+Text GLabel 12100 7150 0    50   Input ~ 0
+L_B4
+Text GLabel 12700 6950 1    50   Input ~ 0
+B4
+Text GLabel 10700 8500 0    50   Input ~ 0
+L_B5
+Text GLabel 8950 8500 0    50   Input ~ 0
+L_B6
+Text GLabel 15100 8500 0    50   Input ~ 0
+L_B7
+Text GLabel 13500 7150 0    50   Input ~ 0
+L_B8
+Text GLabel 12150 8500 0    50   Input ~ 0
+L_B9
+Text GLabel 11300 8300 1    50   Input ~ 0
+B5
+Text GLabel 9550 8300 1    50   Input ~ 0
+B6
+Text GLabel 15700 8300 1    50   Input ~ 0
+B7
+Text GLabel 14100 6950 1    50   Input ~ 0
+B8
+Text GLabel 12750 8300 1    50   Input ~ 0
+B9
+Text GLabel 10750 11000 0    50   Input ~ 0
+L_A0
+Text GLabel 9050 11000 0    50   Input ~ 0
+L_A1
+Text GLabel 15150 11000 0    50   Input ~ 0
+L_A2
+Text GLabel 13650 12350 0    50   Input ~ 0
+L_A3
+Text GLabel 10800 12350 0    50   Input ~ 0
+L_A5
+Text GLabel 9050 12350 0    50   Input ~ 0
+L_A6
+Text GLabel 15200 12350 0    50   Input ~ 0
+L_A7
+Text GLabel 13600 11000 0    50   Input ~ 0
+L_A8
+Text GLabel 11350 10800 1    50   Input ~ 0
+A0
+Text GLabel 9650 10800 1    50   Input ~ 0
+A1
+Text GLabel 15750 10800 1    50   Input ~ 0
+A2
+Text GLabel 14250 12150 1    50   Input ~ 0
+A3
+Text GLabel 11400 12150 1    50   Input ~ 0
+A5
+Text GLabel 9650 12150 1    50   Input ~ 0
+A6
+Text GLabel 15800 12150 1    50   Input ~ 0
+A7
+Text GLabel 14200 10800 1    50   Input ~ 0
+A8
+Text GLabel 18350 8000 0    50   Input ~ 0
+V_NIXIE
+Text GLabel 18850 8000 2    50   Input ~ 0
+V_NIXIE
+Text GLabel 18350 8500 0    50   Input ~ 0
+A6
+Text GLabel 18350 8400 0    50   Input ~ 0
+A2
+Text GLabel 18350 8300 0    50   Input ~ 0
+A8
+Text GLabel 18350 8200 0    50   Input ~ 0
+A9
+Text GLabel 18350 8100 0    50   Input ~ 0
+A0
+Text GLabel 18350 7900 0    50   Input ~ 0
+A1
+Text GLabel 18350 7800 0    50   Input ~ 0
+A7
+Text GLabel 18350 7700 0    50   Input ~ 0
+A3
+Text GLabel 18350 7600 0    50   Input ~ 0
+A4
+Text GLabel 18350 7500 0    50   Input ~ 0
+A5
+Text GLabel 18850 8500 2    50   Input ~ 0
+B6
+Text GLabel 18850 8400 2    50   Input ~ 0
+B2
+Text GLabel 18850 8300 2    50   Input ~ 0
+B8
+Text GLabel 18850 8200 2    50   Input ~ 0
+B9
+Text GLabel 18850 7900 2    50   Input ~ 0
+B1
+Text GLabel 18850 7700 2    50   Input ~ 0
+B3
+Text GLabel 18850 7600 2    50   Input ~ 0
+B4
+Text GLabel 18850 7500 2    50   Input ~ 0
+B5
+$Comp
+L Connector:Conn_01x04_Female J4
+U 1 1 61B9B623
+P 3400 4850
+F 0 "J4" H 3428 4826 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 3428 4735 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3400 4850 50  0001 C CNN
+F 3 "~" H 3400 4850 50  0001 C CNN
+	1    3400 4850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 4750 0    50   Input ~ 0
+3v3
+Text GLabel 3200 4850 0    50   Input ~ 0
+SWIM
+Text GLabel 3200 4950 0    50   Input ~ 0
+GND
+Text GLabel 3200 5050 0    50   Input ~ 0
+NRST
+Text GLabel 5400 6500 1    50   Input ~ 0
+L_A4
+Text GLabel 5500 6500 1    50   Input ~ 0
+L_A3
+Text GLabel 6700 7200 2    50   Input ~ 0
+L_A6
+Text GLabel 6700 7100 2    50   Input ~ 0
+L_A2
+Text GLabel 6400 6500 1    50   Input ~ 0
+L_A8
+Text GLabel 5700 8800 3    50   Input ~ 0
+SW_1
+Text GLabel 5800 8800 3    50   Input ~ 0
+SW_2
+Text GLabel 5900 8800 3    50   Input ~ 0
+SW_3
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J2
+U 1 1 61BDD150
+P 18550 8000
+F 0 "J2" H 18600 8717 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 18600 8626 50  0000 C CNN
+F 2 "Nixie_header:PinHeader_Nixie_1_37mm" H 18550 8000 50  0001 C CNN
+F 3 "~" H 18550 8000 50  0001 C CNN
+	1    18550 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 61D458BB
+P 2950 9300
+F 0 "D2" H 2943 9045 50  0000 C CNN
+F 1 "LED" H 2943 9136 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 2950 9300 50  0001 C CNN
+F 3 "~" H 2950 9300 50  0001 C CNN
+	1    2950 9300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R29
+U 1 1 61D47634
+P 2650 9300
+F 0 "R29" V 2857 9300 50  0000 C CNN
+F 1 "R" V 2766 9300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2580 9300 50  0001 C CNN
+F 3 "~" H 2650 9300 50  0001 C CNN
+	1    2650 9300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6300 8800 3    50   Input ~ 0
+LED_STATUS
+Text GLabel 2500 9300 0    50   Input ~ 0
+LED_STATUS
+Text GLabel 3100 9300 2    50   Input ~ 0
+GND
+Text GLabel 12850 12150 1    50   Input ~ 0
+A9
+Text GLabel 12800 10800 1    50   Input ~ 0
+A4
+Text GLabel 12250 12350 0    50   Input ~ 0
+L_A9
+Text GLabel 12200 11000 0    50   Input ~ 0
+L_A4
+Text GLabel 18850 8100 2    50   Input ~ 0
+B0
+Text GLabel 18850 7800 2    50   Input ~ 0
+B7
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 61C9F808
+P 3800 6100
+F 0 "SW1" H 3800 6467 50  0000 C CNN
+F 1 "SW_DIP_x02" H 3800 6376 50  0000 C CNN
+F 2 "Switch_C&K_PTS526SK15SMTR2LFS:CK-PTS526SK15SMTR2LFS-0-0-MFG" H 3800 6100 50  0001 C CNN
+F 3 "~" H 3800 6100 50  0001 C CNN
+	1    3800 6100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

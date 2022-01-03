@@ -1,0 +1,47 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# C&K PTS526SK15SMTR2LFS
+#
+DEF PTS526SK15SMTR2LFS SW 0 40 Y Y 1 L N
+F0 "SW" 0 100 50 H V L CNN 
+F1 "PTS526SK15SMTR2LFS" 0 200 50 H V L CNN 
+F2 "CK-PTS526SK15SMTR2LFS-0-0-*" 0 300 50 H I L CNN 
+F3 "https://www.ckswitches.com/media/2780/pts526.pdf" 0 400 50 H I L CNN 
+F4 "No" 0 500 50 H I L CNN "automotive"
+F5 "Switch" 0 600 50 H I L CNN "category"
+F6 "50mA" 0 700 50 H I L CNN "contact current rating"
+F7 "100mΩ" 0 800 50 H I L CNN "contact resistance"
+F8 "Electromechanical" 0 900 50 H I L CNN "device class L1"
+F9 "Switches" 0 1000 50 H I L CNN "device class L2"
+F10 "Tactile Switches" 0 1100 50 H I L CNN "device class L3"
+F11 "TACT 5.2 X 5.2, 1.5 MM H, 260GF," 0 1200 50 H I L CNN "digikey description"
+F12 "CKN12221-1-ND" 0 1300 50 H I L CNN "digikey part number"
+F13 "200000Cycles" 0 1400 50 H I L CNN "electromechanical life"
+F14 "1.65mm" 0 1500 50 H I L CNN "height"
+F15 "Yes" 0 1600 50 H I L CNN "lead free"
+F16 "077fdda399d33f58" 0 1700 50 H I L CNN "library id"
+F17 "C&K" 0 1800 50 H I L CNN "manufacturer"
+F18 "611-PTS526SK15SMR2L" 0 1900 50 H I L CNN "mouser part number"
+F19 "250gf" 0 2000 50 H I L CNN "operating force"
+F20 "SMT_TACT-SWITCH" 0 2100 50 H I L CNN "package"
+F21 "Yes" 0 2200 50 H I L CNN "rohs"
+F22 "0mm" 0 2300 50 H I L CNN "standoff height"
+F23 "+70°C" 0 2400 50 H I L CNN "temperature range high"
+F24 "-20°C" 0 2500 50 H I L CNN "temperature range low"
+F25 "SPST-NO" 0 2600 50 H I L CNN "throw configuration"
+F26 "12V" 0 2700 50 H I L CNN "voltage rating DC"
+DRAW
+X 1 1 0 0 200 D 40 0 1 1 P 
+X 2 2 0 -200 200 U 40 0 1 1 P 
+X 3 3 400 0 200 D 40 0 1 1 P 
+X 4 4 400 -200 200 U 40 0 1 1 P 
+P 2 1 1 0 400 -100 300 -100 N
+P 2 1 1 0 0 -100 100 -100 N
+C 130 -100 20 1 1 0 N
+C 270 -100 20 1 1 0 N
+P 2 1 1 0 150 -90 250 -30 N
+ENDDRAW
+ENDDEF
+#
+# End Library

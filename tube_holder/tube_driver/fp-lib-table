@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name nixies-us)(type Legacy)(uri ${KIPRJMOD}/nixies/nixies-us.mod)(options "")(descr ""))
+  (lib (name nixie_holder)(type KiCad)(uri ${KIPRJMOD}/nixie_holder)(options "")(descr ""))
+)

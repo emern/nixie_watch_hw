@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name 1062_clip)(type KiCad)(uri ${KIPRJMOD}/1062_clip.pretty)(options "")(descr ""))
+  (lib (name jolt)(type KiCad)(uri ${KIPRJMOD}/jolt.pretty)(options "")(descr ""))
+  (lib (name Nixie_header)(type KiCad)(uri ${KIPRJMOD}/Nixie_header)(options "")(descr ""))
+  (lib (name PCM13SMTR)(type KiCad)(uri ${KIPRJMOD}/PCM13SMTR)(options "")(descr ""))
+  (lib (name Switch_C&K_PTS526SK15SMTR2LFS)(type KiCad)(uri C:/Users/E/Documents/Nixie_watch/watch_v1/watch_v1/Switch_C&K_PTS526SK15SMTR2LFS/eec.pretty)(options "")(descr ""))
+  (lib (name high_volt_silkscreen)(type KiCad)(uri ${KIPRJMOD}/high_volt_silkscreen)(options "")(descr ""))
+)
